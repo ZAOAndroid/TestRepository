@@ -1,6 +1,0 @@
-D:\Новая папка (2)\TestRepository\Z1.2\Z1.2\bin\Debug\Z1.2.exe.config
-D:\Новая папка (2)\TestRepository\Z1.2\Z1.2\obj\Debug\Z1.2.csprojResolveAssemblyReference.cache
-D:\Новая папка (2)\TestRepository\Z1.2\Z1.2\bin\Debug\Z1.2.exe
-D:\Новая папка (2)\TestRepository\Z1.2\Z1.2\bin\Debug\Z1.2.pdb
-D:\Новая папка (2)\TestRepository\Z1.2\Z1.2\obj\Debug\Z1.2.exe
-D:\Новая папка (2)\TestRepository\Z1.2\Z1.2\obj\Debug\Z1.2.pdb

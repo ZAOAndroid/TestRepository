@@ -1,0 +1,11 @@
+D:\Новая папка (2)\TestRepository\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.config
+D:\Репозиторий\TestRepository\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.config
+D:\Репозиторий\TestRepository\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe
+D:\Репозиторий\TestRepository\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.pdb
+D:\Репозиторий\TestRepository\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.exe
+D:\Репозиторий\TestRepository\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.pdb
+D:\Репозиторий\TestRepository\Сумма матриц\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.config
+D:\Репозиторий\TestRepository\Сумма матриц\ConsoleApplication4\obj\Debug\ConsoleApplication4.exe
+D:\Репозиторий\TestRepository\Сумма матриц\ConsoleApplication4\obj\Debug\ConsoleApplication4.pdb
+D:\Репозиторий\TestRepository\Сумма матриц\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe
+D:\Репозиторий\TestRepository\Сумма матриц\ConsoleApplication4\bin\Debug\ConsoleApplication4.pdb

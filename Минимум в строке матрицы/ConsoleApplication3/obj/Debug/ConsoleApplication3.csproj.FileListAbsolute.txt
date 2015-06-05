@@ -1,0 +1,18 @@
+D:\Новая папка (2)\TestRepository\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+D:\Новая папка (2)\TestRepository\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+D:\Новая папка (2)\TestRepository\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+D:\Новая папка (2)\TestRepository\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+D:\Новая папка (2)\TestRepository\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+D:\Новая папка (2)\TestRepository\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+D:\Репозиторий\TestRepository\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+D:\Репозиторий\TestRepository\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+D:\Репозиторий\TestRepository\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+D:\Репозиторий\TestRepository\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+D:\Репозиторий\TestRepository\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+D:\Репозиторий\TestRepository\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+D:\Репозиторий\TestRepository\Минимум в строке матрицы\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+D:\Репозиторий\TestRepository\Минимум в строке матрицы\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+D:\Репозиторий\TestRepository\Минимум в строке матрицы\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+D:\Репозиторий\TestRepository\Минимум в строке матрицы\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+D:\Репозиторий\TestRepository\Минимум в строке матрицы\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+D:\Репозиторий\TestRepository\Минимум в строке матрицы\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+D:\Новая папка (2)\TestRepository\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Новая папка (2)\TestRepository\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Новая папка (2)\TestRepository\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Новая папка (2)\TestRepository\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\Новая папка (2)\TestRepository\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Новая папка (2)\TestRepository\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

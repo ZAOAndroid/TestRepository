@@ -1,0 +1,12 @@
+D:\Новая папка (2)\TestRepository\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+D:\Новая папка (2)\TestRepository\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache
+D:\Новая папка (2)\TestRepository\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+D:\Новая папка (2)\TestRepository\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+D:\Новая папка (2)\TestRepository\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+D:\Новая папка (2)\TestRepository\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+D:\Репозиторий\TestRepository\Количество слов\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+D:\Репозиторий\TestRepository\Количество слов\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+D:\Репозиторий\TestRepository\Количество слов\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+D:\Репозиторий\TestRepository\Количество слов\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache
+D:\Репозиторий\TestRepository\Количество слов\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+D:\Репозиторий\TestRepository\Количество слов\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
