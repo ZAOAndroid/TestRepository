@@ -10,64 +10,61 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-            int z = 0;
-            int x,y;
-            // Калькулятор
-            Console.WriteLine("Введите первой число");
+            try
+            {
+                int z = 0;
+                int x, y;
+                // Калькулятор
+                Console.WriteLine("Введите первой число");
 
-            // здесь надо отлаливать ошибки, что бы не было букв и оверчисел
-            
-            
-                bool xx = Int32.TryParse(Console.ReadLine(), out x);
+                // здесь надо отлаливать ошибки, что бы не было букв и оверчисел
+
+                bool xx = Int32.TryParse(Console.ReadLine(), out checked(x));
                 Console.WriteLine("Введите второе число");
-                bool yy = Int32.TryParse(Console.ReadLine(), out y);
+                bool yy = Int32.TryParse(Console.ReadLine(), out checked(y));
+
                 // ввод знака
                 Console.WriteLine("Введите арифетическую операцию");
-                // здесь надо отлаливать ошибки на всякую херню, можно проще, сразу вычисления делаем
+                // считаем, если ввод прошел проверку
                 string s = Console.ReadLine();
                 if ((xx != false) && (yy != false))
                 {
-                    
                     if
                     (s == "+")
                     {
-                        z = x + y;
+                        z = checked(x + y);
                         Console.WriteLine(z);
                     }
                     else
                         if (s == "-")
                         {
-                            z = x - y;
+                            z = checked(x - y);
                             Console.WriteLine(z);
                         }
                         else
                             if (s == "*")
                             {
-                                    z = x * y;
+                                z = checked(x * y);
                             }
                             else
                                 if ((s == "/") && (y != 0))
                                 {
-                                    z = x / y;
+                                    z = checked(x / y);
                                     Console.WriteLine(z);
                                 }
-                                else {Console.WriteLine("Ввод некорректен");}
-                
-
-                    Console.ReadLine();
-                    
-                   // catch (System.OverflowException e)
-                  //  {
-                  //      Console.WriteLine("Слишком большое число" + e.ToString());
-                    //}
+                                else { Console.WriteLine("Ввод некорректен"); }
                 }
                 else
                 {
                     Console.WriteLine("Некорректный ввод");
-                    Console.ReadLine();
                 }
-            
-            
+            }
+                //ловим исключения
+            catch (Exception e)
+            { Console.WriteLine("poimali" + " " + e.ToString()); }
+
+            Console.ReadLine();
+
         }
     }
 }

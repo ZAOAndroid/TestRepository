@@ -18,14 +18,14 @@ namespace ConsoleApplication3
                 x = checked(Convert.ToInt32(Console.ReadLine()));
                 Console.WriteLine("Введите степень для нового числа");
                 n = checked(Convert.ToInt32(Console.ReadLine()));
-                xor = checked(Math.Pow(x, n)); //эта функция вроде как поудачнее, чем "^", но исключение не ловит, пишет "?"
+                xor = checked((long)Math.Pow(x, n)); //эта функция вроде как поудачнее, чем "^", но исключение не ловит, пишет "?"
+                Console.WriteLine("Результат"+" "+xor); //можно и с E выводить, не знаю, как лучше
             }
-                //исключение переполнения
+            //исключение переполнения
             catch (System.OverflowException e)
             {
-                Console.WriteLine("Слишком большое число" + e.ToString());
+                Console.WriteLine("Слишком большое число. Исключение:" + " "+e.ToString());
             }
-            Console.WriteLine (/*"{0:E}",*/xor); //можно и с E выводить, не знаю, как лучше
             Console.ReadLine();
 
 

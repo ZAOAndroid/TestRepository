@@ -4,3 +4,6 @@ D:\Новая папка (2)\TestRepository\ConsoleApplication1\ConsoleApplicati
 D:\Новая папка (2)\TestRepository\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
 D:\Новая папка (2)\TestRepository\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 D:\Новая папка (2)\TestRepository\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\Репозиторий\TestRepository\Калькулятор2\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Репозиторий\TestRepository\Калькулятор2\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Репозиторий\TestRepository\Калькулятор2\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
