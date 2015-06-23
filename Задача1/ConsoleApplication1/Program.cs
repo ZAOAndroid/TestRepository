@@ -24,7 +24,7 @@ namespace ConsoleApplication1
             //Значение карточки
             Console.WriteLine("Значение карточки:"+" "+card.getname() + " " + card.getId()+" "+card.Code.ToString());
             //список контактов
-            Console.WriteLine("Для создания контакта с номером введите - 1, для почты - 2");
+            Console.WriteLine("Введите для выбора варианта события: 1 - новый контакт с телефоном, 2 - новый контакт с почтой, 4 - завершить, 5 - отобразить запись, 6 - стереть");
             string k="";
             
             //варианты событий
@@ -46,13 +46,10 @@ namespace ConsoleApplication1
                         case "6":
                             card.Del();
                             break;
+                        case "4":
+                            break;
                     }
                 }
-
-               
-            
-
-            
             Console.ReadLine();
         }
     }
