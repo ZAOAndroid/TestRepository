@@ -1,0 +1,2 @@
+D:\Репозиторий\TestRepository\Задача1\ConsoleApplication1\obj\Debug\Data.csprojResolveAssemblyReference.cache
+D:\Репозиторий\TestRepository\Задача1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
