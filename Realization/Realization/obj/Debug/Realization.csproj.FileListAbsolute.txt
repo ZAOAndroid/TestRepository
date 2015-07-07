@@ -1,0 +1,8 @@
+D:\Новая папка (3)\Realization\Realization\bin\Debug\Realization.exe.config
+D:\Новая папка (3)\Realization\Realization\bin\Debug\Realization.exe
+D:\Новая папка (3)\Realization\Realization\bin\Debug\Realization.pdb
+D:\Новая папка (3)\Realization\Realization\bin\Debug\Data.dll
+D:\Новая папка (3)\Realization\Realization\bin\Debug\Data.pdb
+D:\Новая папка (3)\Realization\Realization\obj\Debug\Realization.csprojResolveAssemblyReference.cache
+D:\Новая папка (3)\Realization\Realization\obj\Debug\Realization.exe
+D:\Новая папка (3)\Realization\Realization\obj\Debug\Realization.pdb
