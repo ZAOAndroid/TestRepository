@@ -21,7 +21,7 @@ namespace Data
             //здесь внутри должно быть сравнение по 2м параметрам
             //сделала parametr тоже как общий
             Contact temp = (Contact)pers;
-            if ((this.contact == temp.contact)&&(this.parametr==temp.parametr))
+            if /*(*/(this.contact == temp.contact)/*&&(this.parametr==temp.parametr))*/
             { count = 1; }
             else
             { count = 0; }

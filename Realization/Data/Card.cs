@@ -95,8 +95,8 @@ namespace Data
                             _contacts[i].dubl = true;
                             countt ++;
                         }
-                        else 
-                        { _contacts[i].dubl = false; }
+                        else
+                        {  _contacts[i].dubl = false; }
                     }
                 }
             //здесь думала выводить сам контакт и соответственно подпись, есть ли дубль, но чет не зашло

@@ -61,6 +61,8 @@ namespace Realization
                             Console.WriteLine("Try again"+"\n");
                             break;
                     }
+                    Console.WriteLine("Нажмите любую клавишу, чтобы продолжить");
+                    Console.ReadKey();
                 }
                 catch (Exception e)
                 {
@@ -138,6 +140,8 @@ namespace Realization
                                 Console.WriteLine("Введите номер");
                                 number.contact = Console.ReadLine();
                                 cd.AddContact(number);
+                                if ((number.contact=="")|(number.parametr==""))
+                                    throw new ArgumentNullException();
                                 Console.WriteLine("Контакт создан:)");
                                 Console.WriteLine();
                                 break;
@@ -149,6 +153,8 @@ namespace Realization
                                 //    mail.Alias = Console.ReadLine();
                                 mail.parametr = Console.ReadLine();
                                 cd.AddContact(mail);
+                                if ((mail.contact == "") | (mail.parametr == ""))
+                                    throw new ArgumentNullException();
                                 Console.WriteLine("Контакт создан:)");
                                 Console.WriteLine();
                                 break;
@@ -164,6 +170,7 @@ namespace Realization
                     }
                 }
             }
+
             catch (Exception e)
             {
                 Console.WriteLine(e.Message + " Некорректное значение");
@@ -240,7 +247,7 @@ namespace Realization
             Console.WriteLine("Введите Id второй карточки");
             int id2 = Convert.ToInt32(Console.ReadLine());
 
-            if ((id1 == id2)|(cards.Count-1<id1)|(cards.Count-1<id2))
+            if ((id1 == id2)|(id1>cards.Count)|(id2>cards.Count))
             { Console.WriteLine("Карточка сравнивается сама с собой, лиюо такой карточки нет"); }
             else
             {
