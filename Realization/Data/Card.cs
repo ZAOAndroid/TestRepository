@@ -94,9 +94,11 @@ namespace Data
                         {
                             _contacts[i].dubl = true;
                             countt ++;
+                            Console.WriteLine(countt);
                         }
                         else
-                        {  _contacts[i].dubl = false; }
+                        {  
+                            _contacts[i].dubl = false; }
                     }
                 }
             //здесь думала выводить сам контакт и соответственно подпись, есть ли дубль, но чет не зашло
@@ -109,7 +111,7 @@ namespace Data
            }*/
 
             //по факту просто есть или нет дубли
-                if (countt > 0)
+                if (countt > 1)
                 { Console.WriteLine("Est' dubli"); }
                 else
                 { Console.WriteLine("Net dublei"); }
