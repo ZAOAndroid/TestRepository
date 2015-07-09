@@ -15,7 +15,7 @@ namespace Data
 {
     public class NumbContact : Contact
     {
-       // public string Code { get; set; }
+        // public string Code { get; set; }
 
         public override string ToString()
         {
@@ -24,8 +24,8 @@ namespace Data
 
         public override System.Xml.Linq.XElement toXml()
         {
-            XElement x = new XElement("Name",new XAttribute("Number",contact),/*Code*/new XAttribute("Code",parametr));
-           // return base.toXml();
+            XElement x = new XElement("Name", new XAttribute("Number", contact),/*Code*/new XAttribute("Code", parametr));
+            // return base.toXml();
             return x;
         }
     }

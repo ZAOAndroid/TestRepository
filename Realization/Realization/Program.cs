@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Xml.Linq;
+
+
 
 namespace Realization
 {
@@ -11,10 +14,10 @@ namespace Realization
     class Program
     {
         public static List<Card> cards = new List<Card>();
-       
+
         //консолюшка вся
         static void Main(string[] args)
-        {          
+        {
             string k = "";
             //варианты событий
             while (k != "4")
@@ -31,13 +34,13 @@ namespace Realization
                         case "2":
                             NewContact();
                             break;
-                        case "5":
-                            WriteContact();
-                            break;
                         case "3":
                             Del();
                             break;
                         case "4":
+                            break;
+                        case "5":
+                            WriteContact();
                             break;
                         case "6":
                             Compare();
@@ -55,10 +58,10 @@ namespace Realization
                             writeFile();
                             break;
                         case "11":
-                            xx();
+                            ToXML();
                             break;
                         default:
-                            Console.WriteLine("Try again"+"\n");
+                            Console.WriteLine("Try again" + "\n");
                             break;
                     }
                     Console.WriteLine("Нажмите любую клавишу, чтобы продолжить");
@@ -75,22 +78,23 @@ namespace Realization
         private static Card AddCard()
         {
             Card card = new Card();
+
             Console.WriteLine("Введите имя:");
 
             try
             {
                 card.Name = Console.ReadLine();
-                if (card.Name=="")
-                throw new ArgumentNullException();
+                if (card.Name == "")
+                    throw new ArgumentNullException();
 
                 Console.WriteLine("Введите синкод:");
                 card.SynCode = Convert.ToInt64(Console.ReadLine());
-                if ((card.SynCode < 0)|(card.SynCode == 0)|(Convert.ToString(card.SynCode)==""))
-                throw new Exception ("Ошибка: ");
+                if ((card.SynCode < 0) | (card.SynCode == 0) | (Convert.ToString(card.SynCode) == ""))
+                    throw new Exception("Ошибка: ");
 
                 Console.WriteLine("Введите идентификатор проекта:");
                 card.ProjectId = Convert.ToInt32(Console.ReadLine());
-               // throw new Exception("Ошибка: ");
+                // throw new Exception("Ошибка: ");
 
                 if (cards.Count > 0)
                 {
@@ -103,17 +107,17 @@ namespace Realization
                 Console.WriteLine("Карточка с Id {0} создан", card.Id);
                 Console.WriteLine();
             }
-            
+
             catch (ArgumentNullException e)
             {
-                Console.WriteLine(e.Message); 
+                Console.WriteLine(e.Message);
             }
             catch (Exception e)
             {
-                 Console.WriteLine(e.Message + " Некорректное значение"); 
+                Console.WriteLine(e.Message + " Некорректное значение");
             }
             return card;
-            }
+        }
 
         //создание нового контакта
         private static void NewContact()
@@ -140,9 +144,10 @@ namespace Realization
                                 Console.WriteLine("Введите номер");
                                 number.contact = Console.ReadLine();
                                 cd.AddContact(number);
-                                if ((number.contact=="")|(number.parametr==""))
+                                if ((number.contact == "") | (number.parametr == ""))
                                     throw new ArgumentNullException();
                                 Console.WriteLine("Контакт создан:)");
+                                cd.k = true;
                                 Console.WriteLine();
                                 break;
                             case "2":
@@ -156,6 +161,7 @@ namespace Realization
                                 if ((mail.contact == "") | (mail.parametr == ""))
                                     throw new ArgumentNullException();
                                 Console.WriteLine("Контакт создан:)");
+                                cd.k = true;
                                 Console.WriteLine();
                                 break;
                             default:
@@ -183,10 +189,10 @@ namespace Realization
             string path = "D:\\contaxt.txt.txt";
             Console.WriteLine("Введите id карточки");
             int id = Convert.ToInt32(Console.ReadLine());
-            System.IO.File.WriteAllLines(path, cards[id-1].readContact(), Encoding.UTF8);
-            Console.WriteLine("Файл со списком контактов создан"+"\n");
+            System.IO.File.WriteAllLines(path, cards[id - 1].readContact(), Encoding.UTF8);
+            Console.WriteLine("Файл со списком контактов создан" + "\n");
         }
-        
+
         //считать файл и вывести на консоль
         public static void writeFile()
         {
@@ -195,7 +201,7 @@ namespace Realization
             Console.WriteLine("Содержание файла: ");
             foreach (string s in readText)
             {
-                Console.WriteLine(s);            
+                Console.WriteLine(s);
             }
             Console.WriteLine();
         }
@@ -205,15 +211,14 @@ namespace Realization
         {
             Console.WriteLine("Введите id");
             int id = Convert.ToInt32(Console.ReadLine());
-            foreach (var cd in cards)
+
+            Console.WriteLine("Имя: " + cards[id - 1].Name);
+            Console.WriteLine("Список контактов для карточки с Id = {0}", cards[id - 1].Id);
+
+            string[] lines = cards[id - 1].readContact();
+            for (int i = 0; i < lines.Length; i++)
             {
-                if (cd.Id == id)
-                {
-                    Console.WriteLine("Список контактов для карточки с Id = {0}", cd.Id);
-                    cd.PrContact();
-                }
-                else
-                { Console.WriteLine("Таких нет"+"\n"); }
+                Console.WriteLine("Значение контакта: {0}", lines[i]);
             }
         }
 
@@ -229,6 +234,7 @@ namespace Realization
                     if (cd.Id == id)
                     {
                         cd.DelContact();
+                        cd.k = false;
                     }
                 }
                 Console.WriteLine("Контакты удалены");
@@ -247,13 +253,13 @@ namespace Realization
             Console.WriteLine("Введите Id второй карточки");
             int id2 = Convert.ToInt32(Console.ReadLine());
 
-            if ((id1 == id2)|(id1>cards.Count)|(id2>cards.Count))
+            if ((id1 == id2) | (id1 > cards.Count) | (id2 > cards.Count))
             { Console.WriteLine("Карточка сравнивается сама с собой, лиюо такой карточки нет"); }
             else
             {
                 cards.Sort();
                 Console.Write("Сравнение выполнено: ");
-                if (cards[id1].a == 1)
+                if (cards[id1 - 1].CompareTo(cards[id2 - 1]) == 0)
                 { Console.WriteLine("Id проектов данных карточек равны"); }
                 else
                 { Console.WriteLine("Id проектов данных карточек не равны"); }
@@ -269,9 +275,10 @@ namespace Realization
             int i = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Ведется поиск одинковый контактов...");
 
-            cards[i-1].TheSameContatcs();
-            
-            Console.WriteLine("WEllDone");
+            if (cards[i - 1].TheSameContatcs() > 1)
+            { Console.WriteLine("Est' dubli"); }
+            else
+            { Console.WriteLine("Net dublei"); }
         }
 
         //копирование карточки
@@ -281,21 +288,51 @@ namespace Realization
             int i = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Клонирование...");
 
-            Card clon = new Card();
-            clon = (Card)cards[i - 1].Clone();
-            clon.Id = cards[cards.Count-1].Id + 1;
-          //  Console.WriteLine(clon.ToString());
+            Card card1 = (Card)cards[i - 1].Clone();
+            cards.Add(card1);
+            Console.WriteLine(card1.ToString());
+            Console.WriteLine(cards[i].ToString());
             Console.WriteLine("Новая карточка создана");
-            return clon;
+
+            return card1;
         }
 
-        public static void xx()
+        public static void ToXMLContacts()
         {
             Console.WriteLine("Введите id карточки");
             int i = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Создание xml-файла");
-            cards[i-1].XXX();
+            cards[i - 1].XXX();
+            string str = System.IO.File.ReadAllText("xml");
+            Console.WriteLine(str);
             Console.WriteLine("sdelano");
+        }
+        public static void ToXMLCard()
+        {
+            Console.WriteLine("Введите id карточки");
+            int i = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Создание xml-файла");
+            //     cards[i - 1].toXml().Save("x.xml");
+            string str = System.IO.File.ReadAllText("x.xml");
+            Console.WriteLine(str);
+        }
+
+        //Для выбора создания xml-файла
+        public static void ToXML()
+        {
+            Console.WriteLine("Для создания xml-файла карточки - 1, для списка контакот карточки - 2");
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    ToXMLCard();
+                    break;
+                case "2":
+                    ToXMLContacts();
+                    break;
+                default:
+                    Console.WriteLine("Something wrong");
+                    break;
+            }
         }
     }
 }

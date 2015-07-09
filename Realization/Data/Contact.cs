@@ -8,30 +8,25 @@ using System.Linq;
 
 namespace Data
 {
-    public abstract class Contact:IComparable<Contact>
+    public abstract class Contact : IComparable<Contact>
     {
         //поле, которое наследуют
         public string contact { get; set; }
         public virtual string parametr { get; set; }
 
-        public int count = 0;
-        public bool dubl {get;set;}
+        //     public bool dubl { get; set; }
         public int CompareTo(Contact pers)
         {
             //здесь внутри должно быть сравнение по 2м параметрам
             //сделала parametr тоже как общий
             Contact temp = (Contact)pers;
-            if ((this.contact == temp.contact)&&(this.parametr==temp.parametr))
-            { count = 1; }
-            else
-            { count = 0; }
-            return count;
+            return this.contact.CompareTo(temp.contact) + this.parametr.CompareTo(temp.parametr);
+
         }
 
         public virtual XElement toXml()
         {
-            XElement x = new XElement("Name",contact);
-           // x.Save("x.xml");
+            XElement x = new XElement("Name", contact);
             return x;
         }
     }

@@ -17,17 +17,17 @@ namespace Data
 {
     public class MailContact : Contact
     {
-     //   public string Alias { get; set; }
+        //   public string Alias { get; set; }
         public override string ToString()
         {
-       //     return contact + "_" + Alias;
+            //     return contact + "_" + Alias;
             return contact + "_" + parametr;
         }
 
         public override XElement toXml()
         {
             XElement x = new XElement("Name", new XAttribute("Mail", contact), /*Alias*/ new XAttribute("Alias", parametr));
-          //  return base.toXml();
+            //  return base.toXml();
             return x;
         }
     }
