@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Xml.Linq;
+
 
 namespace Data
 {
@@ -105,6 +107,31 @@ namespace Data
         {
             XElement x = new XElement("Name", new XAttribute("Id", Id), new XAttribute("Name", Name), new XAttribute("IdOfProject", ProjectId), new XAttribute("SysCode", SynCode));
             return x;
+        }
+        
+        //номера по алфавиту
+        public void toLINQNumberConyact()
+        {
+            var resultNumberContact = _contacts.OfType<NumbContact>().OrderBy(NumbContact => NumbContact.contact);
+
+            foreach (var ctc in resultNumberContact)
+            {
+                Console.WriteLine(ctc.ToString());
+            }
+        }
+
+        //почта
+        public string[] toLINQMailContact()
+        {
+            var resultMailContact = _contacts.OfType<MailContact>().Where(MailContact => MailContact.contact.Contains(".рф"));
+
+            string[] lines = new string[_contacts.Count];
+            foreach (var ctc in resultMailContact)
+            {
+                for (int i = 0; i < _contacts.Count; i++)
+                { lines[i] = ctc.ToString(); }
+            }
+            return lines;
         }
     }
 }

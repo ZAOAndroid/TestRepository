@@ -1,0 +1,6 @@
+D:\Репозиторий\TestRepository\Realization\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+D:\Репозиторий\TestRepository\Realization\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+D:\Репозиторий\TestRepository\Realization\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+D:\Репозиторий\TestRepository\Realization\ConsoleApplication2\obj\Debug\StaticClass.csprojResolveAssemblyReference.cache
+D:\Репозиторий\TestRepository\Realization\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+D:\Репозиторий\TestRepository\Realization\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb

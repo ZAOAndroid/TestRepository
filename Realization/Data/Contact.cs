@@ -20,7 +20,7 @@ namespace Data
             //здесь внутри должно быть сравнение по 2м параметрам
             //сделала parametr тоже как общий
             Contact temp = (Contact)pers;
-            return this.contact.CompareTo(temp.contact) + this.parametr.CompareTo(temp.parametr);
+            return Math.Abs(this.contact.CompareTo(temp.contact)) + Math.Abs( this.parametr.CompareTo(temp.parametr));
 
         }
 

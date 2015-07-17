@@ -24,7 +24,7 @@ namespace Realization
             {
                 try
                 {
-                    Console.WriteLine("Введите для выбора варианта события:" + "\n" + "1 - новая крточка" + "\n" + "2 - новый контакт" + "\n" + "3 - удалить контакты" + "\n" + "4 - завершить" + "\n" + "5 - отобразить список контактов" + "\n" + "6 - сравнить две карточки по id проекта" + "\n" + "7 - поиск одинаковых контактов" + "\n" + "8 - клонировать карточку" + "\n" + "9 - записать список контактов в файл" + "\n" + "10 - считать и вывести на консоль список контактов из файла" + "\n" + "11 - создать xml-файл");
+                    Console.WriteLine("Введите для выбора варианта события:" + "\n" + "1 - новая карточка" + "\n" + "2 - новый контакт" + "\n" + "3 - удалить контакты" + "\n" + "4 - завершить" + "\n" + "5 - отобразить список контактов" + "\n" + "6 - сравнить две карточки по id проекта" + "\n" + "7 - поиск одинаковых контактов" + "\n" + "8 - клонировать карточку" + "\n" + "9 - записать список контактов в файл" + "\n" + "10 - считать и вывести на консоль список контактов из файла" + "\n" + "11 - создать xml-файл");
                     k = Console.ReadLine();
                     switch (k)
                     {
@@ -59,6 +59,9 @@ namespace Realization
                             break;
                         case "11":
                             ToXML();
+                            break;
+                        case "12":
+                            LINQ();
                             break;
                         default:
                             Console.WriteLine("Try again" + "\n");
@@ -332,6 +335,29 @@ namespace Realization
                 default:
                     Console.WriteLine("Something wrong");
                     break;
+            }
+        }
+
+        //Для поиска контактов
+        public static void LINQ()
+        {
+            Console.WriteLine("Введите id карты, в которой будет вестись поиск");
+            int id = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("1 - сортировка контактов по номерам телефонов");
+            Console.WriteLine("2 - сортировка контактов по Email");
+            int a = Convert.ToInt32( Console.ReadLine());
+            if (a == 1)
+            { cards[id - 1].toLINQNumberConyact(); }
+            else
+            {
+                if (a == 2)
+                {
+                    string[] lines = cards[id - 1].toLINQMailContact();
+                    for (int i = 0; i < lines.Length; i++)
+                    { Console.WriteLine(lines[i]); }
+                }
+                else
+                { Console.WriteLine("В своем приложении будешь левые символы вводить"); }
             }
         }
     }

@@ -17,10 +17,10 @@ namespace Data
 {
     public class MailContact : Contact
     {
-        //   public string Alias { get; set; }
+          // public string Alias { get; set; }
         public override string ToString()
         {
-            //     return contact + "_" + Alias;
+              //   return contact + "_" + Alias;
             return contact + "_" + parametr;
         }
 
@@ -30,5 +30,16 @@ namespace Data
             //  return base.toXml();
             return x;
         }
+
+      /*  public int CompareTo(MailContact other)
+        {
+            if (base.CompareTo(other) == 0)
+            {
+                return Alias.CompareTo(other);
+            }
+
+            return base.CompareTo(other);
+        }*/
+
     }
 }

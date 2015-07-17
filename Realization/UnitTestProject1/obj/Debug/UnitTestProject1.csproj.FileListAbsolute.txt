@@ -1,0 +1,7 @@
+D:\Репозиторий\TestRepository\Realization\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\Репозиторий\TestRepository\Realization\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\Репозиторий\TestRepository\Realization\UnitTestProject1\bin\Debug\Data.dll
+D:\Репозиторий\TestRepository\Realization\UnitTestProject1\bin\Debug\Data.pdb
+D:\Репозиторий\TestRepository\Realization\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+D:\Репозиторий\TestRepository\Realization\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\Репозиторий\TestRepository\Realization\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

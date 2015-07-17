@@ -7,6 +7,6 @@ D:\Новая папка (3)\Realization\Data\obj\Debug\Data.pdb
 D:\Репозиторий\TestRepository\Realization\Data\bin\Debug\Data.dll.config
 D:\Репозиторий\TestRepository\Realization\Data\bin\Debug\Data.dll
 D:\Репозиторий\TestRepository\Realization\Data\bin\Debug\Data.pdb
-D:\Репозиторий\TestRepository\Realization\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 D:\Репозиторий\TestRepository\Realization\Data\obj\Debug\Data.dll
 D:\Репозиторий\TestRepository\Realization\Data\obj\Debug\Data.pdb
+D:\Репозиторий\TestRepository\Realization\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
