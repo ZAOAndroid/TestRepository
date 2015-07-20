@@ -113,35 +113,19 @@ namespace Data
 
         public string[] toLINQNumberContact()
         {
-            var resultNumberContact = _contacts.OfType<NumbContact>().OrderBy(NumbContact => NumbContact.contact);
-            int a = resultNumberContact.Count(k => resultNumberContact != null);
+            return _contacts.OfType<NumbContact>()
+                .OrderBy(NumbContact => NumbContact.contact)
+                .Select(c => c.ToString())
+                .ToArray();
 
-            string[] lines = new string[_contacts.Count];
-
-            for (int i = 0; i < a; )
-            {
-                foreach (var ctc in resultNumberContact)
-                {
-                    lines[i] = ctc.ToString();
-                    i++;
-                }
-            }
-            return lines;
         }
 
         //почта
         public string[] toLINQMailContact()
         {
-            var resultMailContact = _contacts.OfType<MailContact>().Where(MailContact => MailContact.contact.Contains(".рф"));
-            int a = resultMailContact.Count(k => resultMailContact != null);
-
-            string[] lines = new string[_contacts.Count];
-            foreach (var ctc in resultMailContact)
-            {
-                for (int i = 0; i < a; i++)
-                { lines[i] = ctc.ToString(); }
-            }
-            return lines;
+            return _contacts.OfType<MailContact>().Where(MailContact=>MailContact.contact.Contains(".рф"))
+                .Select(c => c.ToString())
+                .ToArray();
         }
     }
 }
