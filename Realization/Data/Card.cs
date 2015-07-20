@@ -108,27 +108,37 @@ namespace Data
             XElement x = new XElement("Name", new XAttribute("Id", Id), new XAttribute("Name", Name), new XAttribute("IdOfProject", ProjectId), new XAttribute("SysCode", SynCode));
             return x;
         }
-        
+
         //номера по алфавиту
-        public void toLINQNumberConyact()
+
+        public string[] toLINQNumberContact()
         {
             var resultNumberContact = _contacts.OfType<NumbContact>().OrderBy(NumbContact => NumbContact.contact);
+            int a = resultNumberContact.Count(k => resultNumberContact != null);
 
-            foreach (var ctc in resultNumberContact)
+            string[] lines = new string[_contacts.Count];
+
+            for (int i = 0; i < a; )
             {
-                Console.WriteLine(ctc.ToString());
+                foreach (var ctc in resultNumberContact)
+                {
+                    lines[i] = ctc.ToString();
+                    i++;
+                }
             }
+            return lines;
         }
 
         //почта
         public string[] toLINQMailContact()
         {
             var resultMailContact = _contacts.OfType<MailContact>().Where(MailContact => MailContact.contact.Contains(".рф"));
+            int a = resultMailContact.Count(k => resultMailContact != null);
 
             string[] lines = new string[_contacts.Count];
             foreach (var ctc in resultMailContact)
             {
-                for (int i = 0; i < _contacts.Count; i++)
+                for (int i = 0; i < a; i++)
                 { lines[i] = ctc.ToString(); }
             }
             return lines;

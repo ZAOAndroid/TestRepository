@@ -347,7 +347,11 @@ namespace Realization
             Console.WriteLine("2 - сортировка контактов по Email");
             int a = Convert.ToInt32( Console.ReadLine());
             if (a == 1)
-            { cards[id - 1].toLINQNumberConyact(); }
+            {
+                string[] lines = cards[id - 1].toLINQNumberContact();
+                for (int i = 0; i < lines.Length; i++)
+                { Console.WriteLine(lines[i]); }
+            }
             else
             {
                 if (a == 2)
