@@ -14,7 +14,9 @@ namespace TryToExtension
             int[] massiv = new int[] { 1, 2, 3 };
             Console.WriteLine("Введите разделяющий символ");
             string symbol = Console.ReadLine();
-            Console.WriteLine(massiv.ExtensionMethod(symbol));
+
+            Console.WriteLine(massiv.Print(symbol));
+
             Console.ReadLine();
         }
     }
@@ -28,15 +30,27 @@ namespace Extensions
 
     public static class ArrayExtension
     {
-        public static string ExtensionMethod(this int[] array, string symbol)
+       /* public static string ExtensionMethod(this int[] array, string symbol)
         {
             string[] lines = new string[array.Length];
             for (int i = 0; i < array.Length; i++)
             {
                 lines[i] = array[i].ToString();
             }
-            string result = string.Join(symbol, lines);
+            var result = string.Join(symbol, lines);
+
             return result;
+        }*/
+
+        public static string Print(this int[] array, string symbol)
+        {
+            string str = "";
+            str += array[0];
+            for (int i = 1; i < array.Length; i++)
+            {
+                str = str + symbol + array[i];
+            }
+                return str;
         }
     }
 }
