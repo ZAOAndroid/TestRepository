@@ -24,11 +24,14 @@ namespace Data
             return contact + "_" + parametr;
         }
 
-        public override XElement toXml()
+        public override  /*XElement*/ XDocument toXml()
         {
             XElement x = new XElement("Name", new XAttribute("Mail", contact), /*Alias*/ new XAttribute("Alias", parametr));
             //  return base.toXml();
-            return x;
+          //  return x;
+            XDocument XDoc = new XDocument();
+            XDoc.Add(x);
+            return XDoc;
         }
 
       /*  public int CompareTo(MailContact other)

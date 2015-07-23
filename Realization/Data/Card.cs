@@ -24,6 +24,17 @@ namespace Data
 
         public bool k { get; set; }
 
+        public CardStatus cardStatus { get; set; }
+
+        //Перечисление
+        public enum CardStatus
+        {
+            NotSet = 0,
+            Verified = 1,
+            Assigned = 100,
+            Archived = 2000
+        }
+
         public void AddContact(Contact contact)
         {
             _contacts.Add(contact);
@@ -96,17 +107,41 @@ namespace Data
         }
 
         // xml-ки
-        public void XXX()
+        public void  XXX()
         {
+            if (File.Exists("xmlka"))
+            {
+                File.Delete("xmlka");
+            }
+
             foreach (var ctc in _contacts)
             {
-                ctc.toXml().Save("x.xml");
+                File.AppendAllText("xmlka", ctc.toXml().ToString()+"\n");
             }
         }
-        public XElement toXml()
+
+
+
+        // Следует поправить запись в xml
+        // скорее всего сделать enumerable из xelements и их записывать уже
+        public XDocument /*XElement*/ toXmlCard()
         {
             XElement x = new XElement("Name", new XAttribute("Id", Id), new XAttribute("Name", Name), new XAttribute("IdOfProject", ProjectId), new XAttribute("SysCode", SynCode));
-            return x;
+            //return x;
+
+            XDocument XDoc = new XDocument();
+            XDoc.Add(x);
+            return XDoc;
+        }
+
+        public XDocument toXMLStatus()
+        {
+            XElement x = new  XElement("Name", new XAttribute("Id", Id), new  XAttribute("Status", cardStatus));
+        //    return x;
+
+            XDocument XDoc = new XDocument();
+            XDoc.Add(x);
+            return XDoc;
         }
 
         //номера по алфавиту
@@ -117,7 +152,6 @@ namespace Data
                 .OrderBy(NumbContact => NumbContact.contact)
                 .Select(c => c.ToString())
                 .ToArray();
-
         }
 
         //почта
@@ -127,5 +161,8 @@ namespace Data
                 .Select(c => c.ToString())
                 .ToArray();
         }
+
+
+
     }
 }

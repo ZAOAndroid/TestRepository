@@ -15,8 +15,6 @@ namespace StaticClass
             Console.WriteLine("Введите разделяющий символ");
             string symbol = Console.ReadLine();
             Console.WriteLine( ArrayExtentions.Extantion(massiv, symbol));
-            string a;
-            Console.WriteLine(a.);
             Console.ReadLine();
         }
 
@@ -36,12 +34,12 @@ namespace StaticClass
                 return result.ToString();
             }
         }
-        public static class ArrayExtentio
+       /* public static class ArrayExtentio
         {
             public static string DelayString(this int[] array)
             {
                 return array.ToString();
             }
-        }
+        }*/
     }
 }

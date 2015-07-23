@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Xml.Linq;
+using System.Linq.Expressions;
+
+
+
 
 
 
@@ -24,7 +28,7 @@ namespace Realization
             {
                 try
                 {
-                    Console.WriteLine("Введите для выбора варианта события:" + "\n" + "1 - новая карточка" + "\n" + "2 - новый контакт" + "\n" + "3 - удалить контакты" + "\n" + "4 - завершить" + "\n" + "5 - отобразить список контактов" + "\n" + "6 - сравнить две карточки по id проекта" + "\n" + "7 - поиск одинаковых контактов" + "\n" + "8 - клонировать карточку" + "\n" + "9 - записать список контактов в файл" + "\n" + "10 - считать и вывести на консоль список контактов из файла" + "\n" + "11 - создать xml-файл");
+                    Console.WriteLine("Введите для выбора варианта события:" + "\n" + "1 - новая карточка" + "\n" + "2 - новый контакт" + "\n" + "3 - удалить контакты" + "\n" + "4 - завершить" + "\n" + "5 - отобразить список контактов" + "\n" + "6 - сравнить две карточки по id проекта" + "\n" + "7 - поиск одинаковых контактов" + "\n" + "8 - клонировать карточку" + "\n" + "9 - записать список контактов в файл" + "\n" + "10 - считать и вывести на консоль список контактов из файла" + "\n" + "11 - создать xml-файл" + "\n" + "12 - сортировка" + "\n" + "13 - статусы карт");
                     k = Console.ReadLine();
                     switch (k)
                     {
@@ -62,6 +66,9 @@ namespace Realization
                             break;
                         case "12":
                             LINQ();
+                            break;
+                        case "13":
+                            toEnum();
                             break;
                         default:
                             Console.WriteLine("Try again" + "\n");
@@ -134,6 +141,7 @@ namespace Realization
                 {
                     if (cd.Id == id)
                     {
+                        cd.cardStatus = Card.CardStatus.Verified;
                         Added = true;
                         Console.WriteLine("Введите для создания контакта с телефоном - 1, с почтой - 2");
                         string vibor = Console.ReadLine();
@@ -192,6 +200,7 @@ namespace Realization
             string path = "D:\\contaxt.txt.txt";
             Console.WriteLine("Введите id карточки");
             int id = Convert.ToInt32(Console.ReadLine());
+            cards[id-1].cardStatus = Card.CardStatus.Assigned;
             System.IO.File.WriteAllLines(path, cards[id - 1].readContact(), Encoding.UTF8);
             Console.WriteLine("Файл со списком контактов создан" + "\n");
         }
@@ -292,6 +301,9 @@ namespace Realization
             Console.WriteLine("Клонирование...");
 
             Card card1 = (Card)cards[i - 1].Clone();
+
+            cards[i-1].cardStatus = Card.CardStatus.Archived;
+
             cards.Add(card1);
             Console.WriteLine(card1.ToString());
             Console.WriteLine(cards[i].ToString());
@@ -300,30 +312,44 @@ namespace Realization
             return card1;
         }
 
+        // Работа с xml
         public static void ToXMLContacts()
         {
             Console.WriteLine("Введите id карточки");
             int i = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Создание xml-файла");
-            cards[i - 1].XXX();
-            string str = System.IO.File.ReadAllText("xml");
-            Console.WriteLine(str);
-            Console.WriteLine("sdelano");
+
+            cards[i-1].XXX();
+            Console.WriteLine(System.IO.File.ReadAllText("xmlka"));
         }
         public static void ToXMLCard()
         {
             Console.WriteLine("Введите id карточки");
             int i = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Создание xml-файла");
-            //     cards[i - 1].toXml().Save("x.xml");
+            cards[i - 1].toXmlCard().Save("x.xml");
             string str = System.IO.File.ReadAllText("x.xml");
             Console.WriteLine(str);
+        }
+
+        public static void ToXMLStatus()
+        {
+            if (System.IO.File.Exists("xStatus.xml"))
+            {
+                System.IO.File.Delete("xStatus.xml");
+            }
+
+            foreach (var c in cards)
+            {
+                System.IO.File.AppendAllText("xStatus.xml", c.toXMLStatus().ToString() + "\n");
+            }
+            Console.WriteLine(System.IO.File.ReadAllText("xStatus.xml"));
         }
 
         //Для выбора создания xml-файла
         public static void ToXML()
         {
-            Console.WriteLine("Для создания xml-файла карточки - 1, для списка контакот карточки - 2");
+            Console.WriteLine("Для создания xml-файла карточки - 1, для списка контакот карточки - 2, для статуса карты - 3");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -331,6 +357,9 @@ namespace Realization
                     break;
                 case "2":
                     ToXMLContacts();
+                    break;
+                case "3":
+                    ToXMLStatus();
                     break;
                 default:
                     Console.WriteLine("Something wrong");
@@ -362,6 +391,15 @@ namespace Realization
                 }
                 else
                 { Console.WriteLine("В своем приложении будешь левые символы вводить"); }
+            }
+        }
+
+        //for enum
+        public static void toEnum()
+        {
+            for (int i = 0; i < cards.Count ; i++)
+            {
+            Console.WriteLine("card {0}: status {1}",cards[i].Id, cards[i].cardStatus);
             }
         }
     }

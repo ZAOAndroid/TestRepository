@@ -22,11 +22,15 @@ namespace Data
             return /*Code*/parametr + " " + contact;
         }
 
-        public override System.Xml.Linq.XElement toXml()
+        public override System.Xml.Linq.XDocument toXml()
         {
             XElement x = new XElement("Name", new XAttribute("Number", contact),/*Code*/new XAttribute("Code", parametr));
             // return base.toXml();
-            return x;
+           // return x;
+            XDocument XDoc = new XDocument();
+            XDoc.Add(x);
+            return XDoc;
         }
+
     }
 }

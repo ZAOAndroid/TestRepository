@@ -24,10 +24,14 @@ namespace Data
 
         }
 
-        public virtual XElement toXml()
+        public virtual XDocument/*XElement*/ toXml()
         {
             XElement x = new XElement("Name", contact);
-            return x;
+          //  return x;
+
+            XDocument XDoc = new XDocument();
+            XDoc.Add(x);
+            return XDoc;
         }
     }
 }
