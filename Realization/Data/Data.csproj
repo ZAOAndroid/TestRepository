@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Card.cs" />
+    <Compile Include="IXmlSerializable.cs" />
+    <Compile Include="XmlRepository.cs" />
+    <Compile Include="Enum.cs" />
     <Compile Include="Contact.cs" />
     <Compile Include="Mail.cs" />
     <Compile Include="Number.cs" />

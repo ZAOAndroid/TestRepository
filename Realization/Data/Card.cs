@@ -5,12 +5,15 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Schema;
+using System.Xml.Serialization;
 
 
 namespace Data
 {
-    public class Card : IComparable<Card>, ICloneable
+    public class Card : IComparable<Card>, ICloneable, IXmlSerializable
     {
         private List<Contact> _contacts = new List<Contact>();
 
@@ -26,13 +29,33 @@ namespace Data
 
         public CardStatus cardStatus { get; set; }
 
-        //Перечисление
-        public enum CardStatus
+       /* public XmlRepository<Card> NewRepository()
         {
-            NotSet = 0,
-            Verified = 1,
-            Assigned = 100,
-            Archived = 2000
+            XmlRepository<Card> cardRepository = new XmlRepository<Card>();
+            cardRepository.Save(this);
+            return 
+        }*/
+
+        public XDocument SaveToXml()
+        {
+            XElement x = new XElement("Name", new XAttribute("Id", Id), new XAttribute("Name", Name), new XAttribute("IdOfProject", ProjectId), new XAttribute("SysCode", SynCode));
+
+            XDocument XDoc = new XDocument();
+            XDoc.Add(x);
+
+            //и в файлик обычный сохраним
+            XDoc.Save("x1");
+            //чтобы проверить, что записалось
+            string str = System.IO.File.ReadAllText("x1");
+            Console.WriteLine(str);
+
+            return XDoc;
+        }
+
+        public object LoadFromXml(XDocument XDoc)
+        {
+            //это заполнить атрибуты
+
         }
 
         public void AddContact(Contact contact)
@@ -120,8 +143,6 @@ namespace Data
             }
         }
 
-
-
         // Следует поправить запись в xml
         // скорее всего сделать enumerable из xelements и их записывать уже
         public XDocument /*XElement*/ toXmlCard()
@@ -131,6 +152,7 @@ namespace Data
 
             XDocument XDoc = new XDocument();
             XDoc.Add(x);
+
             return XDoc;
         }
 

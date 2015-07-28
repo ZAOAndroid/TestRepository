@@ -84,6 +84,8 @@ namespace Realization
             }
         }
 
+        //public static 
+
         //добавление карточки
         private static Card AddCard()
         {
@@ -141,7 +143,7 @@ namespace Realization
                 {
                     if (cd.Id == id)
                     {
-                        cd.cardStatus = Card.CardStatus.Verified;
+                        cd.cardStatus = Data.CardStatus.Verified;  //Card.CardStatus.Verified;
                         Added = true;
                         Console.WriteLine("Введите для создания контакта с телефоном - 1, с почтой - 2");
                         string vibor = Console.ReadLine();
@@ -200,7 +202,7 @@ namespace Realization
             string path = "D:\\contaxt.txt.txt";
             Console.WriteLine("Введите id карточки");
             int id = Convert.ToInt32(Console.ReadLine());
-            cards[id-1].cardStatus = Card.CardStatus.Assigned;
+            cards[id - 1].cardStatus = Data.CardStatus.Assigned; //Card.CardStatus.Assigned;
             System.IO.File.WriteAllLines(path, cards[id - 1].readContact(), Encoding.UTF8);
             Console.WriteLine("Файл со списком контактов создан" + "\n");
         }
@@ -302,7 +304,7 @@ namespace Realization
 
             Card card1 = (Card)cards[i - 1].Clone();
 
-            cards[i-1].cardStatus = Card.CardStatus.Archived;
+            cards[i - 1].cardStatus = Data.CardStatus.Archived; //Card.CardStatus.Archived;
 
             cards.Add(card1);
             Console.WriteLine(card1.ToString());

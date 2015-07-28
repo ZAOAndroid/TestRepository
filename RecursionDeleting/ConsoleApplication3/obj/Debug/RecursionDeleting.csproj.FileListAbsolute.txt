@@ -1,0 +1,12 @@
+D:\Новая папка (3)\ConsoleApplication3\ConsoleApplication3\obj\Debug\RecursionDeleting.csprojResolveAssemblyReference.cache
+D:\Новая папка (3)\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+D:\Новая папка (3)\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+D:\Новая папка (3)\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+D:\Новая папка (3)\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+D:\Новая папка (3)\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+D:\Репозиторий\TestRepository\RecursionDeleting\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+D:\Репозиторий\TestRepository\RecursionDeleting\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+D:\Репозиторий\TestRepository\RecursionDeleting\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+D:\Репозиторий\TestRepository\RecursionDeleting\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+D:\Репозиторий\TestRepository\RecursionDeleting\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+D:\Репозиторий\TestRepository\RecursionDeleting\ConsoleApplication3\obj\Debug\RecursionDeleting.csprojResolveAssemblyReference.cache
