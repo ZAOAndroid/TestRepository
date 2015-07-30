@@ -13,7 +13,7 @@ using System.Xml.Serialization;
 
 namespace Data
 {
-    public class Card : IComparable<Card>, ICloneable, IXmlSerializable
+    public class Card : IComparable<Card>, ICloneable, Data.IXmlSerializable
     {
         private List<Contact> _contacts = new List<Contact>();
 
@@ -36,6 +36,15 @@ namespace Data
             return 
         }*/
 
+       /* public void voidRepForContact()
+        {
+            var repositoryForContacts = new XmlRepository<Data.IXmlSerializable>();
+            foreach (var c in _contacts)
+            {
+                repositoryForContacts.Load(c);
+            }
+        }*/
+
         public XDocument SaveToXml()
         {
             XElement x = new XElement("Name", new XAttribute("Id", Id), new XAttribute("Name", Name), new XAttribute("IdOfProject", ProjectId), new XAttribute("SysCode", SynCode));
@@ -45,6 +54,7 @@ namespace Data
 
             //и в файлик обычный сохраним
             XDoc.Save("x1");
+            Console.WriteLine( XDoc.ToString());
             //чтобы проверить, что записалось
             string str = System.IO.File.ReadAllText("x1");
             Console.WriteLine(str);
@@ -52,10 +62,20 @@ namespace Data
             return XDoc;
         }
 
-        public object LoadFromXml(XDocument XDoc)
+        public void LoadFromXml(XDocument XDoc)
         {
             //это заполнить атрибуты
+            XmlReader reader = XDoc.CreateReader();
+            
+            reader.ReadElementString("Name");
+            
+            //вот на этом моменте тупняк! он NULL записывает
 
+           // reader.GetAttribute("Name");
+           // this.Name = "1234567890"; записывает строки, значит в др месте факап
+           // reader.ReadElementString("Name");
+
+            this.Name =  reader.Value;
         }
 
         public void AddContact(Contact contact)

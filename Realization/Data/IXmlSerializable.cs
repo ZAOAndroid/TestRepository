@@ -7,10 +7,10 @@ using System.Xml.Linq;
 
 namespace Data
 {
-    interface IXmlSerializable
+    public interface IXmlSerializable
     {
         XDocument SaveToXml();
 
-        object LoadFromXml(XDocument XDoc);
+        void LoadFromXml(XDocument XDoc);
     }
 }

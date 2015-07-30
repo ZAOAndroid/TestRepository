@@ -70,6 +70,9 @@ namespace Realization
                         case "13":
                             toEnum();
                             break;
+                        case "14":
+                            TryToReadFromRepository();
+                            break;
                         default:
                             Console.WriteLine("Try again" + "\n");
                             break;
@@ -403,6 +406,20 @@ namespace Realization
             {
             Console.WriteLine("card {0}: status {1}",cards[i].Id, cards[i].cardStatus);
             }
+        }
+
+        // чтобы проверить
+        public static void TryToReadFromRepository()
+        {
+
+            var repForCards = new XmlRepository<Data.IXmlSerializable>();
+
+            repForCards.Save(cards[0]);
+            Console.WriteLine("save");
+            repForCards.Load(cards[1],cards[0]);
+            Console.WriteLine("load");
+            Console.WriteLine(cards[1].Name.ToString());
+
         }
     }
 }
