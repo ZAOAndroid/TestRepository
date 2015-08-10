@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace Data
 {
-    public class XmlRepository<TItem> where TItem :  IXmlSerializable
+    public class XmlRepository<TItem> where TItem :  IXmlSerializable, new() 
     {
         public void Save(TItem item)
         {
@@ -16,16 +16,11 @@ namespace Data
                 item.SaveToXml();
         }
 
-        // За XDocument принимаем введенную 2ю карточку
-        public void Load(TItem item, TItem item2)
+        public TItem Load(XDocument XDoc)
         {
-          //  XDocument XDoc = XDocument.Load("x1");
-          //  Console.WriteLine( XDoc.ToString());
-            
-            if (item != null)
-               // item.LoadFromXml(XDoc);
-                item.LoadFromXml(item2.SaveToXml());
-            
+                var newItem = new TItem();
+                newItem.LoadFromXml(XDoc);
+                return newItem;
         }
     }
 }

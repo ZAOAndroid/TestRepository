@@ -44,5 +44,8 @@ namespace Data
             return base.CompareTo(other);
         }*/
 
+        //переопределим методы для  xmlRepository
+
+
     }
 }

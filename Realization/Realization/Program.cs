@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Xml.Linq;
 using System.Linq.Expressions;
-
-
-
-
+using System.Runtime.InteropServices.ComTypes;
 
 
 namespace Realization
@@ -87,7 +85,7 @@ namespace Realization
             }
         }
 
-        //public static 
+
 
         //добавление карточки
         private static Card AddCard()
@@ -324,7 +322,7 @@ namespace Realization
             int i = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Создание xml-файла");
 
-            cards[i-1].XXX();
+            cards[i - 1].XXX();
             Console.WriteLine(System.IO.File.ReadAllText("xmlka"));
         }
         public static void ToXMLCard()
@@ -337,19 +335,19 @@ namespace Realization
             Console.WriteLine(str);
         }
 
-        public static void ToXMLStatus()
-        {
-            if (System.IO.File.Exists("xStatus.xml"))
-            {
-                System.IO.File.Delete("xStatus.xml");
-            }
+        /* public static void ToXMLStatus()
+         {
+             if (System.IO.File.Exists("xStatus.xml"))
+             {
+                 System.IO.File.Delete("xStatus.xml");
+             }
 
-            foreach (var c in cards)
-            {
-                System.IO.File.AppendAllText("xStatus.xml", c.toXMLStatus().ToString() + "\n");
-            }
-            Console.WriteLine(System.IO.File.ReadAllText("xStatus.xml"));
-        }
+             foreach (var c in cards)
+             {
+                 System.IO.File.AppendAllText("xStatus.xml", c.toXMLStatus().ToString() + "\n");
+             }
+             Console.WriteLine(System.IO.File.ReadAllText("xStatus.xml"));
+         }*/
 
         //Для выбора создания xml-файла
         public static void ToXML()
@@ -362,9 +360,6 @@ namespace Realization
                     break;
                 case "2":
                     ToXMLContacts();
-                    break;
-                case "3":
-                    ToXMLStatus();
                     break;
                 default:
                     Console.WriteLine("Something wrong");
@@ -379,7 +374,7 @@ namespace Realization
             int id = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("1 - сортировка контактов по номерам телефонов");
             Console.WriteLine("2 - сортировка контактов по Email");
-            int a = Convert.ToInt32( Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());
             if (a == 1)
             {
                 string[] lines = cards[id - 1].toLINQNumberContact();
@@ -402,24 +397,17 @@ namespace Realization
         //for enum
         public static void toEnum()
         {
-            for (int i = 0; i < cards.Count ; i++)
+            for (int i = 0; i < cards.Count; i++)
             {
-            Console.WriteLine("card {0}: status {1}",cards[i].Id, cards[i].cardStatus);
+                Console.WriteLine("card {0}: status {1}", cards[i].Id, cards[i].cardStatus);
             }
         }
 
         // чтобы проверить
         public static void TryToReadFromRepository()
         {
-
-            var repForCards = new XmlRepository<Data.IXmlSerializable>();
-
-            repForCards.Save(cards[0]);
-            Console.WriteLine("save");
-            repForCards.Load(cards[1],cards[0]);
-            Console.WriteLine("load");
-            Console.WriteLine(cards[1].Name.ToString());
-
+            var card = new XmlRepository<Card>().Load(cards[0].SaveToXml());
+            Console.WriteLine(card.toXmlCard());
         }
     }
 }

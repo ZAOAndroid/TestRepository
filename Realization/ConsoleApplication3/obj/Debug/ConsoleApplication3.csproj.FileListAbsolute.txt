@@ -1,5 +1,6 @@
 D:\Репозиторий\TestRepository\Realization\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
 D:\Репозиторий\TestRepository\Realization\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
 D:\Репозиторий\TestRepository\Realization\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+D:\Репозиторий\TestRepository\Realization\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
 D:\Репозиторий\TestRepository\Realization\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
 D:\Репозиторий\TestRepository\Realization\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb

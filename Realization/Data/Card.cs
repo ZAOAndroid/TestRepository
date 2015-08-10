@@ -29,53 +29,23 @@ namespace Data
 
         public CardStatus cardStatus { get; set; }
 
-       /* public XmlRepository<Card> NewRepository()
-        {
-            XmlRepository<Card> cardRepository = new XmlRepository<Card>();
-            cardRepository.Save(this);
-            return 
-        }*/
-
-       /* public void voidRepForContact()
-        {
-            var repositoryForContacts = new XmlRepository<Data.IXmlSerializable>();
-            foreach (var c in _contacts)
-            {
-                repositoryForContacts.Load(c);
-            }
-        }*/
-
+        //Если у нас интерфейс, то реализацию нужно описывать в каждом классе, который наследует этот интерфейс
         public XDocument SaveToXml()
         {
-            XElement x = new XElement("Name", new XAttribute("Id", Id), new XAttribute("Name", Name), new XAttribute("IdOfProject", ProjectId), new XAttribute("SysCode", SynCode));
+            XElement x = new XElement("Name", new XAttribute("Id", Id), new XAttribute("Name", Name), new XAttribute("IdOfProject", ProjectId), new XAttribute("SysCode", SynCode), new XAttribute("Status", cardStatus));
 
             XDocument XDoc = new XDocument();
             XDoc.Add(x);
-
-            //и в файлик обычный сохраним
-            XDoc.Save("x1");
-            Console.WriteLine( XDoc.ToString());
-            //чтобы проверить, что записалось
-            string str = System.IO.File.ReadAllText("x1");
-            Console.WriteLine(str);
 
             return XDoc;
         }
 
         public void LoadFromXml(XDocument XDoc)
         {
-            //это заполнить атрибуты
-            XmlReader reader = XDoc.CreateReader();
-            
-            reader.ReadElementString("Name");
-            
-            //вот на этом моменте тупняк! он NULL записывает
-
-           // reader.GetAttribute("Name");
-           // this.Name = "1234567890"; записывает строки, значит в др месте факап
-           // reader.ReadElementString("Name");
-
-            this.Name =  reader.Value;
+            this.Name = XDoc.Element("Name").Attribute("Name").Value;
+            this.Id = Convert.ToInt32(XDoc.Element("Name").Attribute("Id").Value);
+            this.ProjectId = Convert.ToInt64(XDoc.Element("Name").Attribute("IdOfProject").Value);
+            this.SynCode = Convert.ToInt32(XDoc.Element("Name").Attribute("SysCode").Value);
         }
 
         public void AddContact(Contact contact)
@@ -150,7 +120,7 @@ namespace Data
         }
 
         // xml-ки
-        public void  XXX()
+        public void XXX()
         {
             if (File.Exists("xmlka"))
             {
@@ -159,30 +129,20 @@ namespace Data
 
             foreach (var ctc in _contacts)
             {
-                File.AppendAllText("xmlka", ctc.toXml().ToString()+"\n");
+                File.AppendAllText("xmlka", ctc.toXml().ToString() + "\n");
             }
         }
 
         // Следует поправить запись в xml
         // скорее всего сделать enumerable из xelements и их записывать уже
-        public XDocument /*XElement*/ toXmlCard()
+        public XDocument toXmlCard()
         {
-            XElement x = new XElement("Name", new XAttribute("Id", Id), new XAttribute("Name", Name), new XAttribute("IdOfProject", ProjectId), new XAttribute("SysCode", SynCode));
+            XElement x = new XElement("Name", new XAttribute("Id", Id), new XAttribute("Name", Name), new XAttribute("IdOfProject", ProjectId), new XAttribute("SysCode", SynCode), new XAttribute("Status", cardStatus));
             //return x;
 
             XDocument XDoc = new XDocument();
             XDoc.Add(x);
 
-            return XDoc;
-        }
-
-        public XDocument toXMLStatus()
-        {
-            XElement x = new  XElement("Name", new XAttribute("Id", Id), new  XAttribute("Status", cardStatus));
-        //    return x;
-
-            XDocument XDoc = new XDocument();
-            XDoc.Add(x);
             return XDoc;
         }
 
@@ -199,7 +159,7 @@ namespace Data
         //почта
         public string[] toLINQMailContact()
         {
-            return _contacts.OfType<MailContact>().Where(MailContact=>MailContact.contact.Contains(".рф"))
+            return _contacts.OfType<MailContact>().Where(MailContact => MailContact.contact.Contains(".рф"))
                 .Select(c => c.ToString())
                 .ToArray();
         }

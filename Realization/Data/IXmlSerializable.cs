@@ -14,3 +14,4 @@ namespace Data
         void LoadFromXml(XDocument XDoc);
     }
 }
+  

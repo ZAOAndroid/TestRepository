@@ -4,3 +4,6 @@ D:\Новая папка (3)\ConsoleApplication2\ConsoleApplication2\bin\Debug\C
 D:\Новая папка (3)\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
 D:\Новая папка (3)\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
 D:\Новая папка (3)\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+D:\Репозиторий\TestRepository\Fibbonachi\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+D:\Репозиторий\TestRepository\Fibbonachi\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+D:\Репозиторий\TestRepository\Fibbonachi\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb

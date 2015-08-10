@@ -13,7 +13,9 @@ namespace RecursionDeleting
         {
             try
             {
-                DeleteFilesAndDirectories(Console.ReadLine());
+                Console.WriteLine("Введите путь для удаления");
+                string path = Console.ReadLine();
+                DeleteFilesAndDirectories(path);
                 Console.WriteLine("Deleted");
             }
             catch (Exception)
@@ -27,19 +29,17 @@ namespace RecursionDeleting
 
         public static void DeleteFilesAndDirectories(string path)
         {
-            // For file
-            /*string[] files = Directory.GetFiles(Path);
-
-            foreach (var f in files)
+            if (Directory.Exists(path))
             {
-                File.Delete(f);
-            }*/
-
-            var dir = Directory.EnumerateFileSystemEntries(path);
-
-            foreach (var d in dir)
+                foreach (var d in Directory.GetFileSystemEntries(path))
+                {
+                    DeleteFilesAndDirectories(d);
+                }
+                Directory.Delete(path);
+            }
+            if (File.Exists(path))
             {
-                Directory.Delete(path, true);
+                File.Delete(path);
             }
         }
     }

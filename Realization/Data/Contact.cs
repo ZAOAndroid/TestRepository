@@ -25,17 +25,15 @@ namespace Data
 
         }
 
-        public virtual XDocument/*XElement*/ toXml()
+        public virtual XDocument toXml()
         {
             XElement x = new XElement("Name", contact);
-          //  return x;
 
             XDocument XDoc = new XDocument();
             XDoc.Add(x);
             return XDoc;
         }
 
-        // методы xmlRepository
         public XDocument SaveToXml()
         {
             XElement x = new XElement("Name", contact);
@@ -43,20 +41,12 @@ namespace Data
             XDocument XDoc = new XDocument();
             XDoc.Add(x);
 
-            //и в файлик обычный сохраним
-            XDoc.Save("x1");
-            Console.WriteLine(XDoc.ToString());
-
             return XDoc;
         }
 
         public void LoadFromXml(XDocument XDoc)
         {
-            //это заполнить атрибуты
-            XmlReader reader = XDoc.CreateReader();
-            reader.GetAttribute("Name");
-
-            this.contact = reader.Value;
+            this.contact = XDoc.Element("Name").Attribute("Name").Value;
         }
     }
 }
