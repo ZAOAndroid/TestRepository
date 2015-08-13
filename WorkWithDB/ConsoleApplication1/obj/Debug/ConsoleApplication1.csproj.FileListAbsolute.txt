@@ -1,0 +1,11 @@
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.dll
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.dll
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.xml
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.xml
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\bin\Debug\ru\EntityFramework.resources.dll
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Новая папка (3)\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
