@@ -18,6 +18,7 @@ namespace ConsoleApplication1
         public string Value { get; set; }
         public long CardId { get; set; }
         public int ContactTypeId { get; set; }
+        public bool isDeleted { get; set; }
     
         public virtual Cards Cards { get; set; }
         public virtual ContactType ContactType { get; set; }

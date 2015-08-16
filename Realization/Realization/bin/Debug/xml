@@ -1,2 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<body>
 <Name Id="3" Name="Name" BranchId="1" SynCode="987654321" StatusTypeId ="2"/>
+<Contacts Id="3" Value="hhh" CardId="3" ContactTypeId="2"/>
+</body>
