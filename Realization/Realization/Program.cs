@@ -408,6 +408,10 @@ namespace Realization
         {
             var card = new XmlRepository<Card>().Load(cards[0].SaveToXml());
             Console.WriteLine(card.toXmlCard());
+
+
+       
+
         }
     }
 }

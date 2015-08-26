@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>HttpRequestHelper</id>
+    <version>1.3.1.22509</version>
+    <authors>2GIS AutoQA Team</authors>
+    <owners>2GIS AutoQA Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Помощник в вызове HTTP запросов</description>
+    <releaseNotes>Версия 1.3.0
+			+ Добавлена поддержка DELETE запроса
+			+ Добавлена поддержка PUT запроса
+		Версия 1.2.0
+			+ Добавлен конструктор без параметров в PostRequest
+			- Изменен тип параметров в конструкторе GetRequest (на коллекцию пар ключ-значение без уникальности ключа)
+			+ Добавлено хранение ответа в бинарном виде
+		Версия 1.0.0
+			+ Добавлена поддержка GET и POST запросов</releaseNotes>
+    <tags>C# HttpRequest</tags>
+  </metadata>
+</package>

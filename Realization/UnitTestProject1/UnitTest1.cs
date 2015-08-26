@@ -42,6 +42,7 @@ namespace UnitTestProject1
             Assert.AreNotEqual(card.Id, clone.Id);
         }
 
+
         //Сравнение контактов
         [TestMethod]
         public void CompareContactsTest()

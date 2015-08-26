@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity.Core.Common.CommandTrees;
 using System.Data.Entity.Validation;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -42,6 +43,9 @@ namespace ConsoleApplication1
                     case "5":
                         MakeXmlfromDB();
                         break;
+                    case "7":
+                        xmlfile();
+                        break;
                     default:
                         Console.WriteLine("Try again" + "\n");
                         break;
@@ -66,8 +70,12 @@ namespace ConsoleApplication1
                     {
                         Console.WriteLine("\tContact Id: {0}, Name: {1}", contact.Id, contact.Value);
                     }
+
                     Console.WriteLine();
                 }
+
+                Console.WriteLine((from m in dbContext.Cards select m.Name).ToList().Last());
+
             }
         }
 
@@ -213,7 +221,7 @@ namespace ConsoleApplication1
 
                 foreach (var card in dbContext.Cards)
                 {
-                    if ((card.Id == newId) & (xdoc.Element("Body").FirstNode!=xdoc.Element("Body").LastNode))
+                    if ((card.Id == newId) & (xdoc.Element("Body").FirstNode != xdoc.Element("Body").LastNode))
                     {
                         string valueContact = xdoc.Element("Body").Element("Contacts").Attribute("Value").Value;
 
@@ -240,12 +248,12 @@ namespace ConsoleApplication1
                                 Console.WriteLine(card.Contacts.Count); //Это для проверки было, пусть будет
 
                                 var cardwithcontacts = dbContext.Cards.First(c => c.Contacts.Any());
-                               
+
                                 card.Contacts.Remove(dbContext.Contacts.First());
-                               
+
                                 dbContext.Contacts.Remove(dbContext.Contacts.First());
 
-                            //    cardwithcontacts.Contacts.ToList().RemoveAll(c => c.CardId == cardwithcontacts.Id);
+                                //    cardwithcontacts.Contacts.ToList().RemoveAll(c => c.CardId == cardwithcontacts.Id);
 
 
                                 Console.WriteLine("All contatcts were deleted");
