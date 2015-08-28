@@ -1,0 +1,15 @@
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\obj\Debug\UnitTestProject2.csprojResolveAssemblyReference.cache
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\UnitTestProject2.dll
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\UnitTestProject2.pdb
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\ConsoleApplication1.exe
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\EntityFramework.dll
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\EntityFramework.SqlServer.dll
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\nunit.framework.dll
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\ConsoleApplication1.pdb
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\EntityFramework.xml
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\EntityFramework.SqlServer.xml
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\nunit.framework.xml
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\ru\EntityFramework.resources.dll
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\obj\Debug\UnitTestProject2.dll
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\obj\Debug\UnitTestProject2.pdb
+D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\UnitTestProject2.dll.config

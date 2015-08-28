@@ -18,17 +18,18 @@ namespace UnitTestProject1
     {
         // Создание карточку и прочитать ее
         [TestMethod]
+
         public void MakeAndLoad()
         {
             using (var dbContext = new TestDBEntities())
             {
                 var newCard = new Cards();
                 {
-                    newCard.BranchId = 54;
+                    newCard.BranchId = 1;
                     newCard.Id = 2;
-                    newCard.SynCode = 123456789;
+                    newCard.SynCode = 12345;
                     newCard.StatusTypeId = 1;
-                    newCard.Name = "Name of the place";
+                    newCard.Name = "Name";
                 };
 
                 newCard.Contacts.Add(new Contacts() { ContactTypeId = 2, Value = "123@123.ru" });

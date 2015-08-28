@@ -44,7 +44,7 @@ namespace ConsoleApplication1
                         MakeXmlfromDB();
                         break;
                     case "7":
-                        xmlfile();
+                      //  xmlfile();
                         break;
                     default:
                         Console.WriteLine("Try again" + "\n");

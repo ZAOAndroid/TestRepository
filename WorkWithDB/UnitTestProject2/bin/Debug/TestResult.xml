@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\UnitTestProject2.dll" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-08-28" time="14:48:19">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\загрузки\NUnit-2.6.4\NUnit-2.6.4\bin" machine-name="UK-RND-91" user="a.zykova" user-domain="2GIS" />
+  <culture-info current-culture="ru-RU" current-uiculture="ru-RU" />
+  <test-suite type="Assembly" name="D:\Репозиторий\TestRepository\WorkWithDB\UnitTestProject2\bin\Debug\UnitTestProject2.dll" executed="True" result="Success" success="True" time="6.908" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="UnitTestProject2" executed="True" result="Success" success="True" time="6.896" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="TestForDB" executed="True" result="Success" success="True" time="6.895" asserts="0">
+            <results>
+              <test-suite type="ParameterizedTest" name="Test1" executed="True" result="Success" success="True" time="6.889" asserts="0">
+                <results>
+                  <test-case name="UnitTestProject2.TestForDB.Test1(1,2,1234,1,&quot;name&quot;)" executed="True" result="Success" success="True" time="6.836" asserts="1" />
+                  <test-case name="UnitTestProject2.TestForDB.Test1(54,3,441234,1,&quot;Anothername&quot;)" executed="True" result="Success" success="True" time="0.046" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
