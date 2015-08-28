@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>2Gis.AvalonDock</id>
+    <version>2.0.1</version>
+    <title>AvalonDock</title>
+    <authors>v.borisov</authors>
+    <owners>v.borisov</owners>
+    <projectUrl>https://avalondock.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Поддерживаемый нами AvalonDock</description>
+  </metadata>
+</package>

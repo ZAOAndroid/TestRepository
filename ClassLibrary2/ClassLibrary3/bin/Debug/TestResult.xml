@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary3\bin\Debug\ClassLibrary3.dll" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-08-27" time="18:55:47">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\загрузки\NUnit-2.6.4\NUnit-2.6.4\bin" machine-name="UK-RND-91" user="a.zykova" user-domain="2GIS" />
+  <culture-info current-culture="ru-RU" current-uiculture="ru-RU" />
+  <test-suite type="Assembly" name="C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary3\bin\Debug\ClassLibrary3.dll" executed="True" result="Failure" success="False" time="0.148" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="ClassLibrary3" executed="True" result="Failure" success="False" time="0.135" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="UserWantTologIn" executed="True" result="Error" success="False" time="0.132" asserts="0">
+            <failure>
+              <message><![CDATA[SetUp : System.NullReferenceException : Ссылка на объект не указывает на экземпляр объекта.]]></message>
+              <stack-trace><![CDATA[в ClassLibrary3.UserWantTologIn.OpenPage() в c:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary3\Class1.cs:строка 68
+]]></stack-trace>
+            </failure>
+            <results>
+              <test-case name="ClassLibrary3.UserWantTologIn.Test1" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in UserWantTologIn]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

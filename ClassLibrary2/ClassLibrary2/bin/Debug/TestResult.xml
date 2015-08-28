@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\ClassLibrary2.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-08-27" time="18:56:18">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\загрузки\NUnit-2.6.4\NUnit-2.6.4\bin" machine-name="UK-RND-91" user="a.zykova" user-domain="2GIS" />
+  <culture-info current-culture="ru-RU" current-uiculture="ru-RU" />
+  <test-suite type="Assembly" name="C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\ClassLibrary2.dll" executed="True" result="Success" success="True" time="12.839" asserts="0">
+    <results>
+      <test-suite type="TestFixture" name="AutoTest" executed="True" result="Success" success="True" time="12.826" asserts="0">
+        <results>
+          <test-case name="AutoTest.Test2" executed="True" result="Success" success="True" time="0.725" asserts="1" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
