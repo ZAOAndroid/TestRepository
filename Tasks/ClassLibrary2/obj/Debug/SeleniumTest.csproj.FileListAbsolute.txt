@@ -1,0 +1,70 @@
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\obj\Debug\SeleniumTest.csprojResolveAssemblyReference.cache
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\obj\Debug\ClassLibrary2.pdb
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\chromedriver.exe
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\ClassLibrary2.dll.config
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\AutoTest.Exceptions.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\EntityFramework.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\KellermanSoftware.Compare-NET-Objects.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\NUnit.Asserts.Compare.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\nunit.extensions.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\nunit.framework.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\TestActions.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\TestFrameworkVSExtension.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\WebDriver.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\WebDriver.Support.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\EntityFramework.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\KellermanSoftware.Compare-NET-Objects.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\nunit.framework.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\TestActions.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\WebDriver.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\WebDriver.Support.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary2\bin\Debug\Xceed.Wpf.AvalonDock.pdb
+D:\Доки\ClassLibrary2\ClassLibrary2\obj\Debug\SeleniumTest.csprojResolveAssemblyReference.cache
+D:\Доки\ClassLibrary2\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\obj\Debug\ClassLibrary2.pdb
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\chromedriver.exe
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\ClassLibrary2.dll.config
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\AutoTest.Exceptions.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\EntityFramework.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\EntityFramework.SqlServer.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\KellermanSoftware.Compare-NET-Objects.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\Newtonsoft.Json.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\NUnit.Asserts.Compare.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\nunit.extensions.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\nunit.framework.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\TestActions.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\TestFrameworkVSExtension.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\WebDriver.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\WebDriver.Support.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\EntityFramework.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\EntityFramework.SqlServer.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\KellermanSoftware.Compare-NET-Objects.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\Newtonsoft.Json.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\nunit.framework.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\TestActions.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\WebDriver.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\WebDriver.Support.xml
+D:\Доки\ClassLibrary2\ClassLibrary2\bin\Debug\Xceed.Wpf.AvalonDock.pdb

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Web.Test.Framework</id>
+    <version>1.0</version>
+    <title>Test Framework</title>
+    <authors>David Newall</authors>
+    <owners>David Newall</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is a web testing framework using selenium which abstracts away the complexity of using selenium to test a website. It makes it much easier. It also includes a visual studio extension to aid in the process of creating javascript tests. This is done through a UI.</description>
+    <copyright>Copyright 2015</copyright>
+  </metadata>
+</package>

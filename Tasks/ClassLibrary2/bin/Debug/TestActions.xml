@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestActions</name>
+    </assembly>
+    <members>
+        <member name="M:TestActions.UserTestAction`1.RegisterUser``1">
+            <summary>
+            Регистрация пользователя.
+            </summary>
+            <typeparam name="TUser">
+            Тип пользователя.
+            </typeparam>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.RegisterUser``1(System.String,``0)">
+            <summary>
+            Регистрация пользователя.
+            </summary>
+            <param name="userName">
+            Имя пользователя.
+            </param>
+            <param name="user">
+            Экземпляр пользователя.
+            </param>
+            <typeparam name="TUser">
+            Тип пользователя.
+            </typeparam>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.SetCurrentUser(`0)">
+            <summary>
+            Задать текущего пользователя.
+            </summary>
+            <param name="user">
+            Экземпляр пользователя.
+            </param>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.SetCurrentUser``1">
+            <summary>
+            Задать текущего пользователя по его типу.
+            </summary>
+            <typeparam name="TUser">
+            Тип пользователя.
+            </typeparam>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.SetCurrentUser(System.String)">
+            <summary>
+            Задать текущего пользователя по его имени.
+            </summary>
+            <param name="userName">
+            Имя пользователя.
+            </param>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.GetUser">
+            <summary>
+            Возвращает текущего пользователя.
+            </summary>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.GetUser``1">
+            <summary>
+            Возвращает пользователя по его типу.
+            </summary>
+            <typeparam name="TUser">
+            Тип пользователя.
+            </typeparam>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.GetUser(System.String)">
+            <summary>
+            Возвращает пользователя по его имени.
+            </summary>
+            <param name="userName">
+            Имя пользователя.
+            </param>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.Resolve``1">
+            <summary>
+            Возвращает действие от текущего пользователя.
+            </summary>
+            <typeparam name="TAction">
+            Тип действия.
+            </typeparam>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.Resolve``2">
+            <summary>
+            Возвращает действие от заданного по типу пользователя (должен быть зарегистрированным).
+            </summary>
+            <typeparam name="TAction">
+            Тип действия.
+            </typeparam>
+            <typeparam name="TUser">
+            Тип пользователя.
+            </typeparam>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.Resolve``1(System.String)">
+            <summary>
+            Возвращает действие от заданного по имени пользователя (должен быть зарегистрированным).
+            </summary>
+            <param name="userName">
+            Имя пользователя.
+            </param>
+            <typeparam name="TAction">
+            Тип действия.
+            </typeparam>
+        </member>
+        <member name="M:TestActions.UserTestAction`1.Resolve``1(`0)">
+            <summary>
+            Возвращает действие от заданного пользователя.
+            </summary>
+            <param name="user">
+            Экземпляр пользователя.
+            </param>
+            <typeparam name="TAction">
+            Тип действия.
+            </typeparam>
+        </member>
+        <member name="P:TestActions.UserTestAction`1.Instance">
+            <summary>
+            Возвращает исходный экземпляр Unity-контейнера.
+            </summary>
+        </member>
+    </members>
+</doc>

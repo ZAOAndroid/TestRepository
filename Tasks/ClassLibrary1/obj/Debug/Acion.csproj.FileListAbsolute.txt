@@ -1,0 +1,38 @@
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\obj\Debug\Acion.csprojResolveAssemblyReference.cache
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\nunit.framework.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\TestActions.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\WebDriver.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\WebDriver.Support.dll
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\nunit.framework.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\TestActions.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\WebDriver.xml
+C:\Users\a.zykova\Documents\Visual Studio 2013\projects\ClassLibrary2\ClassLibrary1\bin\Debug\WebDriver.Support.xml
+D:\Доки\ClassLibrary2\ClassLibrary1\obj\Debug\Acion.csprojResolveAssemblyReference.cache
+D:\Доки\ClassLibrary2\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\nunit.framework.dll
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\TestActions.dll
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\WebDriver.dll
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\WebDriver.Support.dll
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\nunit.framework.xml
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\TestActions.xml
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\WebDriver.xml
+D:\Доки\ClassLibrary2\ClassLibrary1\bin\Debug\WebDriver.Support.xml
+D:\Доки\ClassLibrary2\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

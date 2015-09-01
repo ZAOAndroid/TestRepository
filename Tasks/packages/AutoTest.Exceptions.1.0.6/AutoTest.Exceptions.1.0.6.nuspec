@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AutoTest.Exceptions</id>
+    <version>1.0.6</version>
+    <title>AutoTest.Exceptions</title>
+    <authors>Jeroen Pot</authors>
+    <owners>Jeroen Pot</owners>
+    <licenseUrl>https://github.com/jeroenpot/AutoTest.Exceptions/blob/master/license.txt</licenseUrl>
+    <projectUrl>https://github.com/jeroenpot/AutoTest.Exceptions/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Automaticly test all your custom exceptions</description>
+    <copyright>Copyright 2014</copyright>
+    <tags>autotest exception exceptions unit-test unittest test</tags>
+  </metadata>
+</package>
